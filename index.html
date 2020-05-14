@@ -10,16 +10,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 
-
-
-
   <!--[if lt IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-
-
-
 
   <header>
     <div id="mainBanner">
@@ -57,17 +51,15 @@
         コンテンツ6
       </div>
 
-      <div class="tab-wrap">
-        <input id="TAB-07" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-07">問い合わせ</label>
-        <div class="tab-content">
-          <h3>問い合わせ</h3>
-          <p>お名前：<input type="text" name="myname" value=""></p>
-          <p>メールアドレス：<input type="email" name="mymail" value=""></p>
-          <p>問い合わせ内容：<input type="text" name="text" value=""></p>
-          <input type="submit" value="送信">
-        </div>
-
+      <input id="TAB-07" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-07">問い合わせ</label>
+      <div class="tab-content">
+        <h3>問い合わせ</h3>
+        <p>お名前：<input type="text" name="myname" value="" placeholder="HogeHoge"></p>
+        <p>メールアドレス：<input type="email" name="mymail" value="" placeholder="info@mail.com"></p>
+        <p>問い合わせ内容：<textarea type="text" value="" placeholder="hoge"></textarea></p>
+        <input type="submit" value="送信">
       </div>
+    </div>
   </header>
 
   <!-- コンテンツを配置 -->

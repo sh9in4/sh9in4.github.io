@@ -2,6 +2,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+textarea[type="text"] {width:90%;}
+
 .tab-label {
     color: White;
     background: LightGray;
