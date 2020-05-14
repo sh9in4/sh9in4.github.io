@@ -52,13 +52,31 @@
       </div>
 
       <input id="TAB-07" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-07">問い合わせ</label>
+
+      <!--
       <div class="tab-content">
         <h3>問い合わせ</h3>
         <p>お名前：<input type="text" name="myname" value="" placeholder="HogeHoge"></p>
         <p>メールアドレス：<input type="email" name="mymail" value="" placeholder="info@mail.com"></p>
         <p>問い合わせ内容：<textarea type="text" value="" placeholder="hoge"></textarea></p>
         <input type="submit" value="送信">
+      -->
+
+      <div class="tab-content">
+        <form action="./mail_send.php" method="post">
+          <p>
+            タイトル：<input type="text" name="title">
+          </p>
+          <p>
+            本文：<textarea type="text" name="content"></textarea>
+          </p>
+          <p>
+            <input type="submit" name="send" value="送信">
+          </p>
+        </form>
       </div>
+
+    </div>
     </div>
   </header>
 
