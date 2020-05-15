@@ -1,22 +1,28 @@
+#mainBanner h1 {
+  text-align: center;
+}
+
 .tab-wrap {
     display: flex;
     flex-wrap: wrap;
+    width: 100%:
 }
-
-textarea[type="text"] {width:90%;}
 
 .tab-label {
     color: White;
     background: LightGray;
     margin-right: 5px;
-    padding: 3px 12px;
+    padding: 3px 3px;
     order: -1;
     border-radius: 50px;
+    margin:0 auto;
 }
+
 .tab-content {
     width: 100%;
     display: none;
 }
+
 /* アクティブなタブ */
 .tab-switch:checked+.tab-label {
     background: Purple;
