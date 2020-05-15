@@ -9,87 +9,20 @@
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <script src="./include.js"></script>
 
   <!--[if lt IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-  <header>
-    <div id="mainBanner">
-      <h1>B-side Curation</h1>
-    </div>
+  <script>
+    include("header.html")
+  </script>
 
-    <div class="tab-wrap">
-      <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-01">メインメニュー</label>
-      <div class="tab-content">
-        メインメニュー
-      </div>
-
-      <input id="TAB-02" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-02">シウチトモミ</label>
-      <div class="tab-content">
-        コンテンツ 2
-      </div>
-
-      <input id="TAB-03" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-03">佐々木昂</label>
-      <div class="tab-content">
-        コンテンツ 3
-      </div>
-
-      <input id="TAB-04" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-04">ミキ</label>
-      <div class="tab-content">
-        コンテンツ 4
-      </div>
-
-      <input id="TAB-05" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-05">Ayato.</label>
-      <div class="tab-content">
-        コンテンツ 5
-      </div>
-
-      <input id="TAB-06" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-06">ハラダコウヘイ</label>
-      <div class="tab-content">
-        コンテンツ6
-      </div>
-
-      <input id="TAB-07" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-07">問い合わせ</label>
-
-      <!--
-      <div class="tab-content">
-        <h3>問い合わせ</h3>
-        <p>お名前：<input type="text" name="myname" value="" placeholder="HogeHoge"></p>
-        <p>メールアドレス：<input type="email" name="mymail" value="" placeholder="info@mail.com"></p>
-        <p>問い合わせ内容：<textarea type="text" value="" placeholder="hoge"></textarea></p>
-        <input type="submit" value="送信">
-      -->
-
-      <!--
-      <div class="tab-content">
-        <form action="mail_send.php" method="post">
-          <p>
-            タイトル：<input type="text" name="title">
-          </p>
-          <p>
-            本文：<textarea type="text" name="content"></textarea>
-          </p>
-          <p>
-            <input type="submit" name="send" value="送信">
-          </p>
-        </form>
-      </div>
-    -->
-
-      <div class="tab-content">
-        <form action="./test_mail.php" method="post">
-          <p>送り先</p><input type="text" name="to">
-          <p>件名</p><input type="text" name="title">
-          <p>メッセージ</p><textarea name="content" cols="60" rows="10"></textarea>
-          <p><input type="submit" name="send" value="送信"></p>
-        </form>
-      </div>
-
-    </div>
-    </div>
-  </header>
+  <script>
+    include("shiuchi.html")
+  </script>
 
   <!-- コンテンツを配置 -->
 
